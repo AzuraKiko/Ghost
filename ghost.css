@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.ghost {
+    background-color: white;
+    height: 120px;
+    width: 100px;
+    border-radius: 100rem 100rem 0 0;
+    margin: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ghost::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: translateY(50%);
+    border-radius:0 0 100rem 100rem;
+    box-shadow: 20px 0 0 0 white, 
+    40px 0 0 0 white, 60px 0 0 0 white, 
+    80px 0 0 0 white;
+}
