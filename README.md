@@ -1,1 +1,1 @@
-# Ghost
+# GHOST
